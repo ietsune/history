@@ -1,10 +1,14 @@
 import Linkify from "linkify-react";
 import React from "react";
 
+interface RenderProps {
+  attributes: React.HTMLProps<HTMLAnchorElement>;
+}
+
 const Home = () => {
   // 共通のレンダリング関数
   const renderLink = (content: string, className: string) => {
-    const LinkComponent = ({ attributes }: { attributes: React.HTMLProps<HTMLAnchorElement> }) => (
+    const LinkComponent: React.FC<RenderProps> = ({ attributes }) => (
       <a {...attributes} style={{ textDecoration: "none" }}>
         <div className={className}>
           <span>{content}</span>
@@ -16,10 +20,7 @@ const Home = () => {
   };
 
   // Linkify コンポーネントに渡すオプションの作成
-  const createOptions = (
-    content: string,
-    className: string
-  ) => ({
+  const createOptions = (content: string, className: string) => ({
     defaultProtocol: "https",
     target: "_blank",
     render: renderLink(content, className),
