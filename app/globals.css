@@ -65,16 +65,17 @@
     --ring: 240 4.9% 83.9%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1000px) {
   body {
     min-height: 100vh;
-    padding-top: 100px; /* ヘッダーの高さ分だけ上部パディングを追加 */
-    padding-bottom: 100px; /* フッターの高さ分だけ下部パディングを追加 */
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-image: url("/guitar.png");
     background-size: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+
   .header {
     @apply bg-gray-100 p-2 mb-2 rounded-lg shadow-md flex items-center justify-between;
     position: fixed;
@@ -82,10 +83,10 @@
     width: 100%;
     background-color: #fff;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 上部に影を追加 */
-    padding: 5px 10px; /* パディングを小さくして調整 */
-    font-size: 14px; /* フォントサイズを小さくする */
-    margin: 0; /* マージンを調整 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 0;
   }
 
   p {
@@ -106,6 +107,7 @@
     margin: 30px 0 0 0;
   }
 }
+
 * {
   @apply border-border;
 }
