@@ -7,7 +7,7 @@ interface RenderProps {
 
 const Home = () => {
   // 共通のレンダリング関数
-  const renderLink = (content: string, className: string) => {
+  function renderLink(content: string, className: string) {
     const LinkComponent: React.FC<RenderProps> = ({ attributes }) => (
       <a {...attributes} style={{ textDecoration: "none" }}>
         <div className={className}>
@@ -17,7 +17,7 @@ const Home = () => {
     );
     LinkComponent.displayName = `LinkComponent(${content})`;
     return LinkComponent;
-  };
+  }
 
   // Linkify コンポーネントに渡すオプションの作成
   const createOptions = (content: string, className: string) => ({
