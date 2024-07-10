@@ -35,7 +35,7 @@ const Home = () => {
   return (
     <div>
       <h2 className="font-bold" style={{ fontSize: "20px", margin: "3%" }}>
-        私のアカウント
+        My Acount
       </h2>
       <Linkify options={xoptions}>{x}</Linkify>
       <p style={{ margin: "30px" }}></p>
