@@ -40,7 +40,6 @@ const Home = () => {
       <Linkify options={xoptions}>{x}</Linkify>
       <p style={{ margin: "30px" }}></p>
       <Linkify options={instoptions}>{inst}</Linkify>
-      <p style={{ margin: "1000px" }}></p>
     </div>
   );
 };
