@@ -71,8 +71,7 @@
     padding-top: 100px; /* ヘッダーの高さ分だけ上部パディングを追加 */
     padding-bottom: 100px; /* フッターの高さ分だけ下部パディングを追加 */
     background-image: url("/guitar.png");
-    background-size: cover;
-    background-position: -60px -50px;
+    background-size: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
