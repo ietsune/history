@@ -161,6 +161,23 @@ body {
   background-attachment: fixed;
 }
 
+.title-background {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #ffffff;
+  z-index: 1;
+  background: #000000;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);/*かげ*/
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+
 .link-spacing {
   margin-bottom: 10px; /* 30pxの間隔を設定 */
 }
@@ -216,7 +233,7 @@ button:hover::before {
   cursor: pointer;
   border: none;
   background: linear-gradient(to right, #8e2de2, #4a00e0);
-  color: ghostwhite;
+  color: rgb(43, 182, 247);
   overflow: hidden;
 }
 
@@ -275,7 +292,7 @@ button:hover::before {
   cursor: pointer;
   border: none;
   background: linear-gradient(to right, #8e2de2, #e00099);
-  color: ghostwhite;
+  color: rgb(244, 14, 240);
   overflow: hidden;
 }
 
